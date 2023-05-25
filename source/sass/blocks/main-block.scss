@@ -1,0 +1,256 @@
+.main-block {
+  position: relative;
+  overflow: hidden;
+  background-color: #7c1648;
+}
+
+.main-block__background img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-block__wrapper {
+  position: relative;
+  z-index: 5;
+  padding-top: 30px;
+  padding-bottom: 21px;
+
+  @include vp-1199 {
+    padding-top: 35px;
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+    padding-bottom: 195px;
+  }
+}
+
+.main-block__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-block__logo {
+  @include vp-1199 {
+    padding-top: 5px;
+  }
+}
+
+.main-block__svg--desktop {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.main-block__svg--tablet {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 13px;
+  }
+}
+
+.main-block__phone-number {
+  font-family: $ff-alumni-sans;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: $fw-semibold;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: $fw-bold;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: $fw-semibold;
+  }
+}
+
+.main-block__bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    justify-content: space-between;
+  }
+}
+
+.main-block__description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 276px;
+  margin-left: 18px;
+
+  @include vp-1199 {
+    padding-top: 203px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 193px;
+  }
+}
+
+.main-block__text {
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: $fw-regular;
+  color: $color-default-white;
+  text-align: end;
+}
+
+.main-block__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 92px;
+  margin-left: 15px;
+
+  @include vp-1199 {
+    padding-top: 76px;
+    margin-left: 10px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-left: 0;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.main-block__title h3 {
+  width: 250px;
+  margin: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 96px;
+  line-height: 111px;
+  font-weight: $fw-extrabold;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: end;
+
+  @include vp-1199 {
+    width: 200px;
+    font-size: 76px;
+    line-height: 86px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+  }
+}
+
+.main-block__city-name {
+  order: -1;
+  margin: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: $fw-semibold;
+  color: $color-default-white;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-left: 118px;
+  margin-bottom: 20px;
+
+  @include vp-1199 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 0;
+    text-align: end;
+    margin-bottom: 11px;
+    margin-right: 2px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+
+.main-block__button {
+  position: relative;
+  right: -2px;
+  align-self: flex-end;
+  padding-top: 48px;
+
+  @include vp-1199 {
+    padding-top: 36px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    right: 0;
+    padding-top: 23px;
+  }
+}
+
+.main-block__button a {
+  display: inline-block;
+  width: 234px;
+  padding: 20px 52px;
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: $fw-bold;
+  color: $color-default-white;
+  text-transform: uppercase;
+  border: 4px solid $color-default-white;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  @include vp-1199 {
+    width: 187px;
+    padding: 20px 30px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.main-block__image {
+  position: relative;
+  top: -30px;
+  margin-left: 64px;
+
+  @include vp-1199 {
+    padding-top: 18px;
+    margin-left: 30px;
+    top: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-block__image img {
+  width: 100%;
+  height: 100%;
+}

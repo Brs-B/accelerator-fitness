@@ -1,0 +1,153 @@
+.fitness-room__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 120px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    margin-bottom: 70px;
+  }
+}
+
+.fitness-room__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: 355px;
+  margin-left: 58px;
+
+  @include vp-1199 {
+    max-width: none;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 31px;
+  }
+
+  @include vp-767 {
+    text-align: start;
+    margin: 0 15px;
+    margin-bottom: 32px;
+  }
+}
+
+.fitness-room__text h2 {
+  margin: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: $fw-semibold;
+  color: $color-dark-blue;
+  letter-spacing: 0.03em;
+  padding-top: 40px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 51px;
+    padding-top: 0;
+    margin-right: 15px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-right: 0;
+  }
+}
+
+.fitness-room__text h3 {
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: $fw-regular;
+  color: $color-dark-blue;
+  padding-top: 5px;
+  margin-bottom: 40px;
+
+  @include vp-1199 {
+    padding-top: 0;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    padding-top: 5px;
+    margin-bottom: 25px;
+  }
+}
+
+.fitness-room__text p {
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $fw-light;
+  color: $color-dark-blue;
+  margin-bottom: 10px;
+
+  @include vp-1199 {
+    margin: 0 86px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-right: 30px;
+  }
+}
+
+.fitness-room__text p:nth-of-type(n+2) {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.fitness-room__image img {
+  @include vp-1199 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.fitness-room__video {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  bottom: 113px;
+
+  @include vp-1199 {
+    bottom: 82px;
+  }
+
+  @include vp-767 {
+    position: static;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+  }
+}
+
+.fitness-room__video iframe {
+  margin-left: 78px;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1199 {
+    margin-left: 0;
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+  }
+}
