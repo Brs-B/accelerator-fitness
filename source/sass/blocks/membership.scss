@@ -1,4 +1,5 @@
 .membership {
+  position: relative;
   background-color: $color-background-gray;
 }
 
@@ -15,7 +16,7 @@
 
   @include vp-767 {
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 }
 
