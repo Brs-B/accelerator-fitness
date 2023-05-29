@@ -1,18 +1,27 @@
+.fitness-room {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
+
 .fitness-room__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 120px;
 
   @include vp-1199 {
     flex-direction: column;
-    padding-top: 100px;
-  }
-
-  @include vp-767 {
-    padding-top: 63px;
-    margin-bottom: 70px;
   }
 }
 
@@ -109,45 +118,67 @@
   }
 }
 
-.fitness-room__image img {
+.fitness-room__media img {
   @include vp-1199 {
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    width: 100vh;
+  }
+}
+
+.fitness-room__wrapper-video {
+  position: absolute;
+  top: 420px;
+  left: 78px;
+  right: 0;
+  width: 364px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    position: relative;
+    top: -83px;
+    width: 39%;
+    left: 0;
+  }
+
+  @include vp-767 {
+    top: 0;
     width: 100%;
-    height: 100%;
   }
 }
 
 .fitness-room__video {
   position: relative;
-  display: block;
-  margin: 0 auto;
-  bottom: 113px;
+  padding-bottom: 56%;
+  height: 0;
+  overflow: hidden;
 
   @include vp-1199 {
-    bottom: 82px;
+    padding-bottom: 62%;
   }
 
   @include vp-767 {
-    position: static;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 40px;
+    padding-bottom: 52%;
+    margin-top: 40px;
   }
 }
 
-.fitness-room__video iframe {
-  margin-left: 78px;
-  width: 364px;
-  height: 228px;
+.fitness-room__video-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  @include vp-1199 {
-    margin-left: 0;
-    width: 266px;
-    height: 167px;
-  }
-
-  @include vp-767 {
-    width: 100%;
-    height: 100%;
-  }
+.fitness-room__video-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }

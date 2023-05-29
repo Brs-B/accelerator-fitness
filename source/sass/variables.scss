@@ -6,8 +6,10 @@ $color-unit-blue: #2e35ac;
 $color-black-blue: #030a1a;
 $color-purple-navy: #495a7d;
 $color-gray: #e8e8e8;
+$color-background-gray: #f8f9fc;
 $color-dark-blue-half: rgba(16, 38, 84, 0.5);
 $color-stripes: rgba(120, 120, 120, 0.2);
+$color-red: #d10a42;
 
 // Default
 
@@ -18,8 +20,7 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Gradient
 
 $button-gradient: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-$border-gradient: linear-gradient(rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
-
+$border-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 
 // Typography
 
