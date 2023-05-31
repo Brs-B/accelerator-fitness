@@ -4,12 +4,12 @@
   background-color: $color-dark-blue;
 
   @include vp-1299 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   @include vp-1199 {
-    padding: 60px 163px 70px 133px;
+    padding: 60px 163px 65px 133px;
   }
 
   @include vp-767 {
@@ -56,7 +56,7 @@
 .form__wrapper form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 29px;
 
   @include vp-1199 {
     gap: 30px 60px;
@@ -89,12 +89,40 @@
   }
 }
 
+.form__block {
+  position: relative;
+
+  .input-message {
+    position: absolute;
+    font-size: 13px;
+    line-height: 13px;
+    left: 0;
+    bottom: -18px;
+    z-index: 20;
+
+    &.is-invalid {
+      color: rgb(196, 7, 7);
+    }
+
+    &.is-valid {
+      color: rgb(24, 124, 13);
+    }
+
+    @include vp-767 {
+      bottom: -17px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}
+
 .form__block input::placeholder {
   color: $color-default-white;
 }
 
 .form__button {
   display: block;
+  cursor: pointer;
   justify-content: center;
   width: 100%;
   grid-column: 1/-1;
@@ -107,7 +135,11 @@
   letter-spacing: 0.05em;
   color: $color-default-white;
   background-color: $color-dark-blue;
-  outline: 3px solid $color-default-white;
+  border: 3px solid $color-default-white;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 
   @include vp-767 {
     margin-top: 10px;

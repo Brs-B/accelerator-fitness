@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line
 const swiper = new Swiper('.mySwiper', {
   breakpoints: {
     320: {
@@ -29,9 +29,7 @@ const swiper = new Swiper('.mySwiper', {
   },
 });
 
-swiper();
-
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line
 const newSwiper = new Swiper('.newSwiper', {
   slidesPerView: 1,
   loop: false,
@@ -40,5 +38,3 @@ const newSwiper = new Swiper('.newSwiper', {
     prevEl: '.reviews__arrow--prev',
   },
 });
-
-newSwiper();

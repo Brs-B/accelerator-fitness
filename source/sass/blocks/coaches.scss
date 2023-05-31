@@ -58,7 +58,7 @@
   position: relative;
   width: calc((100% - 120px) / 4);
 
-  @include vp-1199 {
+  @include vp-1299 {
     width: calc((100% - 90px) / 3);
   }
 

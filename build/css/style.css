@@ -1838,7 +1838,7 @@ button,
   position: relative;
   width: calc((100% - 120px) / 4);
 }
-@media (max-width: 1199px) {
+@media (max-width: 1299px) {
   .coaches__block {
     width: calc((100% - 90px) / 3);
   }
@@ -2835,13 +2835,13 @@ button,
 }
 @media (max-width: 1299px) {
   .form {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 @media (max-width: 1199px) {
   .form {
-    padding: 60px 163px 70px 133px;
+    padding: 60px 163px 65px 133px;
   }
 }
 @media (max-width: 767px) {
@@ -2894,7 +2894,7 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 29px;
 }
 @media (max-width: 1199px) {
   .form__wrapper form {
@@ -2935,6 +2935,31 @@ button,
   opacity: 0.8;
 }
 
+.form__block {
+  position: relative;
+}
+.form__block .input-message {
+  position: absolute;
+  font-size: 13px;
+  line-height: 13px;
+  left: 0;
+  bottom: -18px;
+  z-index: 20;
+}
+.form__block .input-message.is-invalid {
+  color: rgb(196, 7, 7);
+}
+.form__block .input-message.is-valid {
+  color: rgb(24, 124, 13);
+}
+@media (max-width: 767px) {
+  .form__block .input-message {
+    bottom: -17px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
 .form__block input::-webkit-input-placeholder {
   color: #ffffff;
 }
@@ -2957,6 +2982,7 @@ button,
 
 .form__button {
   display: block;
+  cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2971,7 +2997,15 @@ button,
   letter-spacing: 0.05em;
   color: #ffffff;
   background-color: #102654;
-  outline: 3px solid #ffffff;
+  border: 3px solid #ffffff;
+}
+@media (hover: hover) {
+  .form__button:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.form__button.focus-visible:focus {
+  opacity: 0.8;
 }
 @media (max-width: 767px) {
   .form__button {
@@ -3274,6 +3308,13 @@ button,
           justify-content: space-between;
   gap: 11px;
   max-width: 98px;
+}
+@media (max-width: 1199px) {
+  .footer__socials ul {
+    position: relative;
+    top: 3px;
+    right: -5px;
+  }
 }
 @media (max-width: 767px) {
   .footer__socials ul {
