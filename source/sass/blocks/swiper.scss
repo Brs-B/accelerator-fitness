@@ -1,11 +1,9 @@
 .swiper {
   position: relative;
   touch-action: pan-y;
-  max-width: 1280px;
-  padding: 0 60px;
+  max-width: 1160px;
   margin: 0 auto;
   height: 100%;
-  margin-bottom: 140px;
 
   @include vp-1199 {
     padding: 0 101px;
@@ -57,7 +55,7 @@
 
 .swiper-button-prev {
   top: 50%;
-  left: 0;
+  left: 43px;
 
   @include vp-1199 {
     left: 40px;
@@ -70,7 +68,7 @@
 
 .swiper-button-next {
   top: 50%;
-  right: 0;
+  right: 43px;
 
   @include vp-1199 {
     right: 40px;

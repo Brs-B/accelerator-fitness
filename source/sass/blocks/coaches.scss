@@ -1,6 +1,6 @@
 .coaches__wrapper {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -30,13 +30,29 @@
   }
 }
 
+.coaches__swiper {
+  position: relative;
+  margin-bottom: 140px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 50px;
+  }
+}
+
 .coaches__block {
   position: relative;
+  width: calc((100% - 120px) / 4);
 }
 
 .coaches__card {
   position: relative;
   text-align: center;
+  width: 260px;
+  height: 294px;
 }
 
 .coaches__card h3 {
