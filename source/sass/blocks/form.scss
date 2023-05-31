@@ -1,0 +1,116 @@
+.form {
+  padding-left: calc(100% - 580px);
+  padding-right: 170px;
+  background-color: $color-dark-blue;
+
+  @include vp-1299 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include vp-1199 {
+    padding: 60px 163px 70px 133px;
+  }
+
+  @include vp-767 {
+    padding: 64px 15px 72px;
+  }
+}
+
+.form h2 {
+  text-align: center;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 85px;
+  font-weight: $fw-extrabold;
+  color: $color-default-white;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding-top: 53px;
+  margin-right: 20px;
+
+  @include vp-1199 {
+    text-align: start;
+    font-size: 42px;
+    line-height: 51px;
+    font-weight: $fw-bold;
+    padding-top: 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: $fw-semibold;
+    letter-spacing: 0.03em;
+  }
+}
+
+.form__wrapper {
+  padding-top: 14px;
+
+  @include vp-1199 {
+    padding-top: 30px;
+  }
+}
+
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include vp-1199 {
+    gap: 30px 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.form__block input {
+  width: 100%;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: $fw-regular;
+  color: $color-default-white;
+  background-color: $color-dark-blue;
+  border: none;
+  padding: 9px 0;
+  border-bottom: 1px solid $color-stripes;
+
+  @include vp-767 {
+    padding: 7px 0;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.form__block input::placeholder {
+  color: $color-default-white;
+}
+
+.form__button {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  grid-column: 1/-1;
+  padding: 15px 32px;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $ff-roboto-condensed;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  background-color: $color-dark-blue;
+  outline: 3px solid $color-default-white;
+
+  @include vp-767 {
+    margin-top: 10px;
+    padding: 16px 32px;
+  }
+}
