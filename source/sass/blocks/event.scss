@@ -223,6 +223,8 @@
 }
 
 .event__image {
+  background-color: $color-dark-blue;
+
   @include vp-767 {
     min-width: 290px;
   }

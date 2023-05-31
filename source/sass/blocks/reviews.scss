@@ -1,0 +1,146 @@
+.reviews {
+  padding-top: 67px;
+
+  @include vp-1199 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 13px;
+  }
+}
+
+.reviews h2 {
+  text-align: center;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: $fw-semibold;
+  color: $color-dark-blue;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-left: 8px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 51px;
+    margin-right: 10px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.reviews__wrapper {
+  width: 678px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 121px;
+
+  @include vp-1199 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 42px;
+    width: 100%;
+  }
+}
+
+.reviews__swiper {
+  overflow: hidden;
+}
+
+.reviews__card {
+  width: 560px;
+  padding: 62px 62px 55px;
+  margin: 0 auto;
+  background-color: $color-discount-blue;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0 28px;
+
+  @include vp-767 {
+    width: 226px;
+    height: 335px;
+    padding: 40px 25px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+  }
+}
+
+.reviews__avatar {
+  grid-row: span 2;
+
+  @include vp-767 {
+    grid-row: span 1;
+    justify-self: end;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.reviews__avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  @include vp-767 {
+    position: relative;
+    left: 15px;
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.reviews__block h3 {
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: $fw-bold;
+  color: $color-default-white;
+  margin: 0;
+  margin-top: -7px;
+
+  @include vp-767 {
+    margin-top: 4px;
+  }
+}
+
+.reviews__block p {
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: $fw-regular;
+  color: $color-default-white;
+  margin: 0;
+  padding-top: 10px;
+
+  @include vp-767 {
+    padding-top: 12px;
+    text-align: center;
+    grid-column: 1/-1;
+  }
+}
+
+.reviews__arrow--prev {
+  top: 50%;
+  left: -5px;
+
+
+  @include vp-767 {
+    left: 5px;
+  }
+}
+
+.reviews__arrow--next {
+  top: 50%;
+  right: -5px;
+
+  @include vp-767 {
+    right: 5px;
+  }
+}
