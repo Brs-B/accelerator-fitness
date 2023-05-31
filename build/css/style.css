@@ -2857,7 +2857,7 @@ button,
   line-height: 85px;
   font-weight: 800;
   color: #ffffff;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   margin: 0;
   padding-top: 53px;
   margin-right: 20px;
@@ -2868,6 +2868,7 @@ button,
     font-size: 42px;
     line-height: 51px;
     font-weight: 700;
+    letter-spacing: 0.02em;
     padding-top: 0;
   }
 }
@@ -2876,7 +2877,6 @@ button,
     font-size: 32px;
     line-height: 39px;
     font-weight: 600;
-    letter-spacing: 0.03em;
   }
 }
 
@@ -2964,10 +2964,8 @@ button,
   grid-column: 1/-1;
   padding: 15px 32px;
   font-size: 14px;
-  line-height: 16px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
   line-height: 17px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2983,18 +2981,18 @@ button,
 }
 
 .contacts {
-  padding: 55px calc(100% - 580px) 65px 120px;
+  padding: 55px calc(100% - 580px) 62px 120px;
   border-top: 1px solid #74819c;
 }
 @media (max-width: 1199px) {
   .contacts {
-    padding: 64px 84px 70px 133px;
+    padding: 64px 84px 61px 133px;
     border: 0;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 64px 15px;
+    padding: 64px 15px 59px;
   }
 }
 
@@ -3128,6 +3126,161 @@ button,
 
 .contacts a {
   display: inline-block;
+}
+
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__wrapper {
+  padding-top: 41px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1199px) {
+  .footer__logo {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    padding-top: 8px;
+  }
+}
+
+.footer__logo svg {
+  width: 88px;
+  height: 32px;
+}
+@media (max-width: 1199px) {
+  .footer__logo svg {
+    width: 82px;
+    height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__logo svg {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.footer__nav {
+  margin-left: 5px;
+}
+@media (max-width: 1199px) {
+  .footer__nav {
+    margin-left: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav {
+    position: relative;
+    top: -45px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.footer__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+  max-width: 755px;
+}
+@media (max-width: 1199px) {
+  .footer__nav ul {
+    padding-top: 3px;
+    max-width: 390px;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav ul {
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__nav li {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__nav li:nth-child(0n+1) {
+    margin-top: 40px;
+  }
+}
+
+.footer__nav a {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .footer__nav a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.footer__socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 11px;
+  max-width: 98px;
+}
+@media (max-width: 767px) {
+  .footer__socials ul {
+    position: relative;
+    max-width: 100%;
+    top: -10px;
+  }
 }
 
 .btn {

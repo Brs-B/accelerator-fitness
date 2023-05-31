@@ -24,7 +24,7 @@
   line-height: 85px;
   font-weight: $fw-extrabold;
   color: $color-default-white;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   margin: 0;
   padding-top: 53px;
   margin-right: 20px;
@@ -34,6 +34,7 @@
     font-size: 42px;
     line-height: 51px;
     font-weight: $fw-bold;
+    letter-spacing: 0.02em;
     padding-top: 0;
   }
 
@@ -41,7 +42,6 @@
     font-size: 32px;
     line-height: 39px;
     font-weight: $fw-semibold;
-    letter-spacing: 0.03em;
   }
 }
 
