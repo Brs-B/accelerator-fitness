@@ -34,23 +34,14 @@
   position: relative;
   margin-bottom: 140px;
 
-  @include vp-1199 {
+  @include vp-1299 {
+    padding: 0 100px;
     margin-bottom: 100px;
   }
 
   @include vp-767 {
+    padding: 0 47px;
     margin-bottom: 70px;
-  }
-}
-
-.coaches__swiper {
-  @include vp-1199 {
-    padding: 0 101px;
-  }
-
-  @include vp-767 {
-    width: 290px;
-    padding: 0 32px;
   }
 }
 
@@ -59,40 +50,35 @@
   width: calc((100% - 120px) / 4);
 
   @include vp-1299 {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 30px) / 2);
   }
 
   @include vp-767 {
     width: 100%;
-  }
-}
-
-.coaches__block img {
-  @include vp-1199 {
-    width: 268px;
-    height: 294px;
-  }
-
-  @include vp-767 {
-    width: 226px;
-    height: 274px;
+    min-height: 274px;
   }
 }
 
 .coaches__card {
   position: relative;
   text-align: center;
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
+}
+
+.coaches__card img {
+  width: 100%;
 
   @include vp-1199 {
     width: 268px;
     height: 294px;
+    aspect-ratio: 268 / 294;
   }
 
   @include vp-767 {
     width: 226px;
     height: 274px;
+    aspect-ratio: 226 / 274;
   }
 }
 
@@ -107,6 +93,14 @@
   bottom: 25px;
   left: 0;
   right: 0;
+
+  @include vp-1199 {
+    margin-left: 3px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .coaches__block:hover h3 {
@@ -116,8 +110,8 @@
 .coaches__pop-up {
   background-color: rgba(16, 38, 84, 0.89);
   opacity: 0;
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   padding: 52px 45px 30px 57px;
   position: absolute;
   top: 0;
@@ -127,15 +121,8 @@
   overflow: auto;
   text-align: center;
 
-  @include vp-1199 {
-    width: 268px;
-    height: 294px;
-  }
-
   @include vp-767 {
-    width: 226px;
-    height: 274px;
-    padding: 43px 32px;
+    padding: 43px 32px 10px 32px;
   }
 }
 
@@ -168,7 +155,7 @@
   text-align: start;
 
   @include vp-767 {
-    margin-left: 15px;
+    margin-left: 17px;
   }
 }
 
@@ -190,7 +177,7 @@
   }
 
   @include vp-767 {
-    left: -8px;
+    left: 5px;
   }
 }
 
@@ -203,6 +190,6 @@
   }
 
   @include vp-767 {
-    right: -8px;
+    right: 5px;
   }
 }
