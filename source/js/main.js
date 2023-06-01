@@ -5,6 +5,7 @@ import {Form} from './modules/form-validate/form';
 import './utils/swiper-bundle.esm.browser.min.js';
 import './utils/tabs';
 import './utils/slider';
+import './utils/video';
 
 // ---------------------------------
 
