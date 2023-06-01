@@ -9,8 +9,7 @@ function findVideos() {
 function setupVideo(video) {
   let link = video.querySelector('.fitness-room__video-link');
   let button = video.querySelector('.fitness-room__video-button');
-  // eslint-disable-next-line
-  let id = getElementById('.fitness-room__video');
+  let id = parseMediaURL(link);
 
   video.addEventListener('click', () => {
     let iframe = createIframe(id);
@@ -24,13 +23,13 @@ function setupVideo(video) {
   video.classList.add('fitness-room__video--enabled');
 }
 
-// function parseMediaURL(link) {
-//   let regexp = /https:\/\/www\.youtu\.be\.com\/watch?v=\/([a-zA-Z0-9_-]+)/i;
-//   let url = link.src;
-//   let match = url.match(regexp);
+function parseMediaURL(link) {
+  let regexp = /(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/mi;
+  let url = link.href;
+  let match = url.match(regexp);
 
-//   return match[1];
-// }
+  return match[1];
+}
 
 function createIframe(id) {
   let iframe = document.createElement('iframe');
@@ -38,7 +37,7 @@ function createIframe(id) {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
   iframe.setAttribute('src', generateURL(id));
-  iframe.classList.add('fitness-room__video-image');
+  iframe.classList.add('video__media');
 
   return iframe;
 }
