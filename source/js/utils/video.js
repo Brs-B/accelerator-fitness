@@ -37,7 +37,7 @@ function createIframe(id) {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
   iframe.setAttribute('src', generateURL(id));
-  iframe.classList.add('video__media');
+  iframe.classList.add('fitness-room__video-image');
 
   return iframe;
 }
