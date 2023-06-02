@@ -2051,7 +2051,7 @@ button,
   opacity: 0;
   width: 100%;
   height: 100%;
-  padding: 52px 45px 30px 48px;
+  padding: 52px 42px 30px 48px;
   position: absolute;
   top: 0;
   left: 0;
@@ -2059,8 +2059,8 @@ button,
   z-index: 5;
   overflow: auto;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17);
-          box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17);
+  -webkit-box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+          box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
 }
 @media (max-width: 1199px) {
   .coaches__pop-up {
@@ -2105,7 +2105,7 @@ button,
 }
 @media (max-width: 1199px) {
   .coaches__specs ul {
-    margin-left: 24px;
+    margin-left: 23px;
   }
 }
 @media (max-width: 767px) {
@@ -2908,15 +2908,11 @@ button,
 }
 
 .reviews__card {
+  position: relative;
   width: 560px;
   padding: 62px 62px 55px;
   margin: 0 auto;
   background-color: #1c3374;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 80px 1fr;
-  grid-template-columns: 80px 1fr;
-  gap: 0 28px;
 }
 @media (max-width: 1199px) {
   .reviews__card {
@@ -2927,35 +2923,37 @@ button,
   .reviews__card {
     width: calc(100% - 94px);
     padding: 40px 25px 32px;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .reviews__avatar {
-  -ms-grid-row-span: 2;
-  grid-row: span 2;
+  position: absolute;
 }
 @media (max-width: 767px) {
   .reviews__avatar {
-    -ms-grid-row: 1;
-    grid-row: 1;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -2981,11 +2979,14 @@ button,
   color: #ffffff;
   margin: 0;
   margin-top: -7px;
+  margin-left: 107px;
 }
 @media (max-width: 767px) {
   .reviews__block h3 {
     width: 78px;
-    margin-top: 4px;
+    margin-top: 6px;
+    margin-left: 10px;
+    line-height: 26px;
   }
 }
 
@@ -2997,11 +2998,13 @@ button,
   color: #ffffff;
   margin: 0;
   padding-top: 10px;
+  margin-left: 107px;
 }
 @media (max-width: 767px) {
   .reviews__block p {
     padding-top: 10px;
     text-align: center;
+    margin-left: 0;
     grid-column: 1/-1;
   }
 }
