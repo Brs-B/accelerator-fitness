@@ -237,9 +237,13 @@
 }
 
 .membership__value-sign {
-  font-family: $ff-roboto-condensed;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  font-family: $ff-alumni-sans;
   font-size: 60px;
   line-height: 90px;
+  font-weight: $fw-semibold;
   color: $color-dark-blue;
 
   @include vp-767 {
@@ -261,6 +265,7 @@
   padding-bottom: 24px;
   color: $color-dark-blue;
   border: 2px solid $color-dark-blue;
+  user-select: none;
 
   @include hover-focus {
     background: $button-gradient;
@@ -268,6 +273,7 @@
     border: none;
     padding-top: 26px;
     padding-bottom: 26px;
+    opacity: 1;
   }
 }
 

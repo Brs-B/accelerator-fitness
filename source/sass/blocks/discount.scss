@@ -36,6 +36,7 @@
 .discount__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
   gap: 40px;
   padding-top: 33px;
 
@@ -51,8 +52,11 @@
 }
 
 .discount__content {
+  grid-column: 1 / span 1;
+  grid-auto-rows: min-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  min-height: 462px;
 
   @include vp-1199 {
     grid-template-columns: 1fr 399px;
@@ -110,6 +114,10 @@
   }
 }
 
+.discount__text-button {
+  margin: auto 0 0;
+}
+
 .discount__text a {
   display: inline-block;
   width: 79px;
@@ -121,7 +129,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid $color-default-white;
-  margin: auto 0 0;
+  margin-top: 20px;
 
   @include vp-767 {
     align-self: center;
@@ -130,15 +138,7 @@
 
 .discount__image {
   background-color: $color-dark-blue;
-
-  @include vp-767 {
-    min-width: 290px;
-  }
-}
-
-.discount__image img {
   width: 280px;
-  height: 462px;
 
   @include vp-1199 {
     width: 399px;
@@ -150,7 +150,14 @@
   }
 }
 
+.discount__image img {
+  width: 100%;
+  height: 100%;
+}
+
 .discount__coupon {
+  grid-column: span 1 / -1;
+  grid-auto-rows: min-content;
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
@@ -175,10 +182,7 @@
   border: 7px solid;
   border-image: $border-gradient;
   border-image-slice: 1;
-
-  @include vp-1199 {
-    min-height: 211px;
-  }
+  min-height: 211px;
 
   @include vp-767 {
     padding: 35px 25px 40px;
